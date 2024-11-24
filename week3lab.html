@@ -3,20 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>page 2</title>
+    <title>week3lab</title>
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.css"
     />
-    <style>
-      div {
-        border-style: solid;
-        border-color: black;
-      }
-    </style>
+   <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container">
+    <div class="frog-container">
       <div class="row">
         <div class="col-sm-6">content</div>
         <div class="col-sm-3">content</div>
@@ -82,8 +77,7 @@
       <button class="btn btn-dark">dark button</button>
       <button class="btn btn-link">link</button>
     </div>
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+   
     <div>
       <button class="btn btn-info">
         notifications <span class="badge badge-secondary">5</span>
@@ -92,5 +86,45 @@
     <div>
       <h3>invite friends <span class="badge badge-primary">NEW</span></h3>
     </div>
-  </body>
+    <br><br>
+    
+    <form>
+      <div class="container-fluid bg-info ">
+      <div>
+      <input type="text" name="firstname" placeholder="first name"><br>
+      <input type="text" name="lastname" placeholder="last name"> <br>
+      </div><br>
+      <div>
+      Pick a side: <br>
+      <input type="radio" name="team-choice" value="team frog"> Team frog <br>
+      <input type="radio" name="team-choice" value="team toad"> Team toad <br>
+      </div><br>
+      <div>
+      Did you already know the difference between frogs and toads? <br>
+      <input type="radio" name="yes/no" value="yes"> yes<br>
+      <input type="radio" name="yes/no" value="no"> no
+      </div>
+      </div> 
+  </form>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="flexRadioDefault1">
+      Default radio
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+    <label class="form-check-label" for="flexRadioDefault2">
+      Default checked radio
+    </label>
+  </div>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+ 
+
+
+
+
+
+</body>
 </html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>page 2</title>
+    <title>about frogs</title>
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.css"
@@ -30,86 +30,46 @@
             <a class="nav-link" href="page1.html">home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="page2.html">about</a>
+            <a class="nav-link" href="page2.html">survey</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">request info</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              dropdown
-            </a>
-            <div
-              class="dropdown-menu"
-              aria-labelledby="navbarDropdownMenuLink"
-            >
-              <a class="dropdown-item" href="#">item one</a>
-              <a class="dropdown-item" href="#">item two</a>
-              <a class="dropdown-item" href="#">item three</a>
-            </div>
-          </li>
+          
+         
         </ul>
       </div>
     </nav>
   </div>
   <body class="bg-secondary">
-    <div class="container">
-
-      <div class="row">
-        <div class="frog-container">
-          <h1>difference between frogs and toads</h1>
-          <table class="table table-dark table-hover">
-            <tr>
-              <th>
-                <img
-                  src="https://undergroundreptiles.com/wp-content/uploads/2023/10/ug_Bull_Frog_3.jpg"
-                  width="200"
-                  alt=""
-                />american bullfrog
-              </th>
-
-              <th>
-                <img
-                  src="./images/canetoad.jpg"
-                  width="300"
-                  height="200"
-                  alt="bullfrog"
-                />cane toad
-              </th>
-            </tr>
-            <tr>
-              <th>frog</th>
-              <th>cane toad</th>
-            </tr>
-            <tr>
-              <td>
-                mostly live in areas of high humidity/near bodies of water
-              </td>
-              <td>
-                able to live in drier areas due to their ability to burrow in
-                the soil to maintain humidity in dry times
-              </td>
-            </tr>
-            <tr>
-              <td>webbed toes for swimming</td>
-              <td>typically do not have webbed toes</td>
-            </tr>
-            <tr>
-              <td>longer stronger legs for jumping</td>
-              <td>shorter legs adapted more for walking</td>
-            </tr>
-          </table>
+    <form>
+      <div class="container-fluid bg-info form-check">
+        <div class="row g-3">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+          </div>
         </div>
+        <br>
+      <div class="form-check">
+      <h6 class="text-danger bs-text-danger-emphasis ">Pick a side:</h6>
+      <input class="form-check-input" type="radio" name="team-choice" id="teamfrog">
+      <label class="form-check-label" for="teamfrog">
+        Team frog
+      </label><br>
+      <input class="form-check-input" type="radio" name="team-choice" id="teamtoad">
+      <label class="form-check-label" for="teamtoad">
+        Team toad
+      </label>
+     </div><br>
+      <div>
+      <h6 class="text-dark bs-text-danger-emphasis">Did you already know the difference between frogs and toads?</h6>
+      <input type="radio" name="yes/no" value="yes"> yes<br>
+      <input type="radio" name="yes/no" value="no"> no
       </div>
-    </div>
+      </div> 
+  </form>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
